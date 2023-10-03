@@ -3,37 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
 <body>
 
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
+  <main>
+    <div class="container">
+      
+      <div id="header">
+        <h2>Simple, traffic-based pricing</h2>
+        <p>Sign-up for our 30-day trial. No credit card required.</p> 
+      </div>
+    
+      <div id="card">
 
-  Pageviews
-  $ /month
+        <div class="card-item" id="pricing">
+          <div id="page-views">
+            <p id="views-value">100K</p>
+            <p>Pageviews</p>
+          </div>
+          <div id="price-per-month">
+            <h1 id="pricing-value">$16.00</h1>
+            <p>$ /month</p>
+          </div>
+        </div>
+        
+        <div class="card-item" id="slider"></div>
 
-  Monthly Billing
-  Yearly Billing 25% discount
+        <div class="card-item" id="billing-format">
+          <p>Monthly Billing</p>
+          <div id="toggle-switch"></div>
+          <p>Yearly Billing</p>
+          <p id="discount">25% discount</p>
+        </div>
 
-  Unlimited websites
-  100% data ownership
-  Email reports
+        <div class="card-item" id="divider"></div>
+      
+        <div class="card-item" id="cta">
 
-  Start my trial
+          <div id="perks">
+            <p><img src="./images/icon-check.svg" alt="Icon of a checkmark">  Unlimited websites</p>
+            <p><img src="./images/icon-check.svg" alt="Icon of a checkmark">  100% data ownership</p>
+            <p><img src="./images/icon-check.svg" alt="Icon of a checkmark">  Email reports</p>
+          </div>
+        
+          <button id="cta-btn">Start my trial</button>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/FazleLabib">Fazle Labib</a>.
+    </div>
+  </footer>
 </body>
 </html>
