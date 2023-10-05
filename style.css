@@ -176,6 +176,24 @@ input[type="range"]::-moz-range-thumb {
     box-shadow: 0 5px 15px 5px var(--soft-cyan);
 }
 
+input[type='range']::-webkit-slider-thumb:hover{
+    transition: .2s ease-in;
+    background-color: hsl(174, 90%, 50%);
+}
+
+input[type='range']::-moz-range-thumb:hover{
+    transition: .2s ease-in;
+    background-color: hsl(174, 90%, 50%);
+}
+
+input[type='range']::-webkit-slider-thumb:active{
+    background-color: hsl(176, 65%, 40%);
+}
+
+input[type='range']::-moz-range-thumb:active{
+    background-color: hsl(176, 65%, 40%);
+}
+
 #billing-format {
     justify-content: center;
     align-items: center;
@@ -204,8 +222,8 @@ input[type="range"]::-moz-range-thumb {
     right: 0;
     bottom: 0;
     background-color: var(--light-grayish-blue);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s;
+    transition: .2s ease-in;
     border-radius: 34px;
 }
   
@@ -217,9 +235,13 @@ input[type="range"]::-moz-range-thumb {
     left: 4px;
     bottom: 4px;
     background-color: var(--white);
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .2s ease-in;
+    transition: .2s ease-in;
     border-radius: 50%;
+}
+
+.switch-slider:hover {
+    background-color: var(--soft-cyan);
 }
   
 input:checked + .switch-slider {
@@ -241,13 +263,20 @@ input:checked + .switch-slider:before {
     gap: 0.5rem;
 }
 
-#discount {
+.discount {
     background-color: var(--light-grayish-red);
-    color: var(--light-red);
     padding: 0.15rem 0.5rem;
     border-radius: 1rem;
     font-size: 0.65rem;
     font-weight: 800;
+}
+
+.discount p {
+    color: var(--light-red);
+}
+
+#discount-mobile {
+    display: none;
 }
 
 #divider {
@@ -285,6 +314,10 @@ button {
 
 button:hover {
     color: var(--white);
+}
+
+#year {
+    display: none;
 }
 
 footer {
