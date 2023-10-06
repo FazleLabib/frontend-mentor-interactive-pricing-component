@@ -19,6 +19,8 @@
     --light-grayish-blue-toggle: hsl(223, 50%, 87%);    /* (Toggle Background) */
     --grayish-blue: hsl(225, 20%, 60%);    /* (Text) */
     --dark-desaturated-blue: hsl(227, 35%, 25%);    /* (Text & CTA Background) */
+
+    --slider-value: 3; /* Initial value of slider */
 }
 
 * {
@@ -167,6 +169,11 @@ input[type="range"]::-webkit-slider-runnable-track {
     background: var(--light-grayish-blue-slider);
     height: 0.5rem;
     border-radius: 1rem;
+    background-image: linear-gradient(to right, var(--strong-cyan) 0%, 
+                    var(--strong-cyan) calc((var(--slider-value) - 1) * 25%), 
+                    var(--light-grayish-blue-slider) calc(var(--slider-value) * 10%), 
+                    var(--light-grayish-blue-slider) 100%);
+    background-size: 100% 100%;
 }
   
 /******** Firefox ********/
@@ -174,6 +181,11 @@ input[type="range"]::-moz-range-track {
     background: var(--light-grayish-blue-slider);
     height: 0.5rem;
     border-radius: 1rem;
+    background-image: linear-gradient(to right, var(--strong-cyan) 0%, 
+    var(--strong-cyan) calc((var(--slider-value) - 1) * 25%), 
+    var(--light-grayish-blue-slider) calc(var(--slider-value) * 10%), 
+    var(--light-grayish-blue-slider) 100%);
+    background-size: 100% 100%;
 }
 
 /***** Thumb Styles *****/
