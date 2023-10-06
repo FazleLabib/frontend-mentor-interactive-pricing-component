@@ -62,8 +62,6 @@ const proudOfThisFunc = () => {
 }
 ``` -->
 
-### Continued development
-
 ### Useful resources
 
 - [Custom Range Slider](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/) - I used a modified version of this to create the slider.
